@@ -5,11 +5,12 @@ Site estático da Aroe Tecnologia, construído conforme o **Manual de Marca Aroe
 ## Estrutura
 
 ```
-index.html            página única (hero, serviços, processo, portfólio, sobre, contato)
+index.html            página única (hero, serviços, processo, portfólio, clientes, sobre, contato)
 assets/styles.css     design tokens e componentes da marca
 assets/fonts.css      M Miuan embutida (base64)
 assets/main.js        menu mobile, revelação ao rolar, envio do formulário
-assets/portfolio/     capturas dos sites do portfólio
+assets/portfolio/     capturas dos sites do portfólio (960x645)
+assets/clientes/      logos da seção "Empresas que confiam na Aroe"
 vercel.json           cleanUrls e cache dos assets
 ```
 

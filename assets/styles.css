@@ -165,3 +165,15 @@ footer{background:var(--papel-2);padding:var(--s8) 0 var(--s6);border-top:1px so
 .work-link{display:inline-flex;align-items:center;gap:7px;margin-top:6px;font-size:14.5px;font-weight:600;color:var(--folha);text-decoration:underline;text-underline-offset:3px}
 .work-item:hover .work-link{text-decoration-thickness:2px}
 @media (max-width:900px){.work{grid-template-columns:1fr;gap:var(--s8)}}
+@media (min-width:1101px){.work{grid-template-columns:repeat(3,1fr);gap:var(--s6) var(--s4)}}
+
+/* Clientes: parede de logos (só logos, sem legenda) */
+.clients{padding-top:0}
+.clients .wrap{border-top:1px solid var(--line);padding-top:var(--s12)}
+.logos{list-style:none;display:grid;gap:var(--s3);grid-template-columns:repeat(4,1fr)}
+.logos a{display:grid;place-items:center;height:168px;padding:var(--s3);background:#fff;border:1px solid var(--line);border-radius:var(--radius-card);transition:border-color .2s ease,transform .2s ease}
+.logos a:hover{border-color:var(--ink-40);transform:translateY(-2px)}
+.logos img{max-width:80%;max-height:112px;width:auto;height:auto;object-fit:contain}
+.logos img[src$=".svg"]{width:80%;height:112px}
+@media (max-width:900px){.logos{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.clients .wrap{padding-top:var(--s8)}.logos a{height:136px;padding:var(--s2)}.logos img{max-height:88px}.logos img[src$=".svg"]{height:88px}}
